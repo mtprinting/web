@@ -28,6 +28,31 @@ body{
   border-radius:6px;
 }
 
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.layanan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.layanan-list li {
+  padding: 6px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.layanan-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+  
 /* Foto */
 .foto{
   width:100%;
@@ -92,15 +117,27 @@ body{
 <!-- LAYANAN -->
 <div class="box">
   <h3><b>Layanan</b></h3>
-  <ul class="layanan-list">
-    <li>Fotokopi</li>
-    <li>Print Dokumen</li>
-    <li>Cetak Foto</li>
-    <li>Scan</li>
-    <li>Laminating</li>
-    <li>Self Studio Foto Mini</li>
-  </ul>
+
+  <div class="layanan-grid">
+    <ul class="layanan-list">
+      <li>Fotokopi</li>
+      <li>Print Dokumen</li>
+      <li>Cetak Foto</li>
+      <li>Scan</li>
+      <li>Laminating</li>
+      <li>Self Studio Foto Mini</li>
+    </ul>
+
+    <ul class="layanan-list">
+      <li>Isi Pulsa</li>
+      <li>Top Up E-Wallet</li>
+      <li>Token Listrik</li>
+      <li>Paket Data</li>
+      <li>Bayar Tagihan</li>
+    </ul>
+  </div>
 </div>
+
 
 <!-- FOTO TOKO -->
 <div class="box">
